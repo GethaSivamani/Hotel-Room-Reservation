@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #6a85b6, #bac8e0);
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #4a63d1;
+  color: #fff;
+  padding: 15px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+  margin-bottom: 80px; /* Adjusted for footer and extra space below last floor */
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #4a63d1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #354ba1;
+}
+
+/* Floor and Room Styling */
+.floor-container {
+  margin: 20px auto;
+  text-align: left;
+  max-width: 800px;
+}
+
+.floor-container h2 {
+  background-color: #354ba1;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.room-row {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.room {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.room.available {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.room.occupied {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.room.selected {
+  border: 3px solid #ffa500;
+  box-shadow: 0 0 5px #ffa500;
+}
+.message-box {
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.message-box.success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.message-box.error {
+  background-color: #f44336;
+  color: white;
+}
