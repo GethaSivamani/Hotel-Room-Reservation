@@ -1,4 +1,4 @@
-const API_URL = 'https://your-backend-url.onrender.com';
+const API_URL = 'http://localhost:3000';
 let selectedRooms = []; // To store selected room IDs
 
 // Load rooms and render them floor-wise
